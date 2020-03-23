@@ -1,0 +1,327 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body {
+    font-family: 'Public Sans', sans-serif;
+    /* font-size: 18px; */
+    font-weight: 400;    
+    overflow-x: hidden;
+    background-color: hsl(0, 0%, 98%);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 90px 700px 600px 660px 190px;   
+}
+
+header {
+    grid-column: span 12;
+    display: flex;
+    background-color:  hsl(0, 0%, 100%);
+    padding-top: 2rem;
+   
+
+}
+
+.logo img {
+    display: block;
+    max-width: 17%;
+    height: auto;
+    
+}
+
+
+header > div:nth-child(1) {
+    margin-left: 4cm;
+}
+header > div:nth-child(2) {
+    margin-left: 0.8cm; 
+    margin-top: 0.9rem;
+}
+header > div:nth-child(3) {
+    margin-left: 6cm;
+  
+}
+
+header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header li {
+    display: inline;
+    margin-right: 0.8rem;
+}
+
+header a {
+    /* color: hsl(0, 0%, 98%); */
+    color: gray;
+    text-decoration: none;
+}
+
+.nav-btn {
+    background-image: linear-gradient( to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+    font-family: 'Public Sans', sans-serif;
+    color: hsl(0, 0%, 98%);
+    padding: 13px 40px;
+    text-align: center;
+    display: inline;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 23px;
+    /* margin-left: 0.3rem;
+    margin-top: 0.8rem; */
+    /* border-color: hsl(237, 63%, 64%) ; */
+    cursor: pointer;
+}
+
+
+main {
+    grid-column: span 6;
+    margin: 0 auto; 
+    width: 62%;
+    text-align: left;
+   
+}
+main h1 {
+    font-size: 3.6rem;
+    padding-top: 8rem;
+    color: rgb(59, 58, 58);
+    font-weight: 300;
+}
+
+main p {
+    color: hsl(233, 8%, 62%);
+    font-size: 18px;
+    margin-top: 1rem;
+    line-height: 1.4rem;
+}
+
+main button {
+    margin-top: 1.5rem;
+}
+
+aside {
+    grid-column: span 6;
+    margin-left: 7rem;
+    margin-top: 0rem; 
+}
+
+.aside-img1 {
+    /* padding-left: 40px;
+    display: block;
+    max-width: 50%;
+    height: auto; */
+    /* position: relative;
+    top: -120px;
+    bottom: 2px;
+    z-index: -1;
+    padding-bottom: -4rem; */
+    /* position: absolute;
+    margin-top: 0rem; */
+    width: 104%;
+    position: relative;
+    overflow: hidden;
+    
+
+}
+
+.aside-imgbg{
+  position: absolute;
+  max-width: 75%;
+  top: -90px;
+  left: 42rem;
+  z-index: -1;
+}
+
+section {
+    grid-column: span 12;
+    background-color: hsl(220, 16%, 96%);
+    margin-top: -6rem;
+    padding-left: 8.8rem;
+    /* margin: 0 auto; 
+    width: 62%; */
+
+}
+
+.why-choose {
+    font-size: 2.7rem;
+    margin-top: 8rem;
+    color: rgb(59, 58, 58);
+    font-weight: 300;
+}
+
+.why-p {
+    color: hsl(233, 8%, 62%);
+    font-size: 18px;
+    margin-top: 1rem;
+    line-height: 1.3rem;
+}
+
+.why-cards {
+    margin-top: 4rem;
+    display: flex;
+    margin-bottom: 8rem;
+    /* flex-wrap: wrap; */
+}
+
+.cards {
+    /* float: left;
+    width: 25%; */
+    flex: 23%;
+    max-width: 23%;
+    text-align: left ;
+}
+
+.cards h2 {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    color: rgb(59, 58, 58);
+    font-weight: 300;
+}
+
+.cards p {
+    color: hsl(233, 8%, 62%);
+    font-size: 17px;
+    margin-top: 1.3rem;
+    line-height: 1.4rem;
+    margin-right: 2rem;
+}
+
+article {
+    grid-column: span 12;
+    padding-left: 8.8rem;
+    /* margin-bottom: 8rem; */
+    
+}
+
+article h1 {
+    font-size: 2.7rem;
+    margin-top: 5rem;
+    color: rgb(59, 58, 58);
+    font-weight: 200;
+    margin-bottom: 3rem;
+}
+
+.wrap-articles {
+    display: flex;
+    margin-bottom: 4rem;
+    
+}
+.articled {
+    flex: 20%;
+    max-width: 20%;
+    text-align: left;
+    border-radius: 5px;
+    margin-right: 2rem;
+   
+}
+
+.articled img {
+    max-width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+
+
+.article-card {
+    background-color: white;
+    border-radius: 0 0 2px 2px;
+    padding-left: 1rem; 
+    padding-right: 1rem;
+    text-align: left;
+   
+}
+
+.article-card h5 {
+    font-size: 11px;
+    color: hsl(233, 8%, 62%);
+    padding-top: 2rem;
+
+}
+
+
+.article-card h3 {
+    font-size: 16px;
+    line-height: 1.2rem;
+    /* color: gray; */
+    color: rgb(59, 58, 58);
+    padding-top: 0.5rem;
+}
+
+.article-card p {
+    color: hsl(233, 8%, 62%);
+    padding-top: 0.7rem;
+    font-size: 14px;
+    padding-bottom: 2rem;
+}
+
+footer {
+    grid-column: span 12;
+    background-color: hsl(233, 26%, 24%);
+    padding-top: 3rem;
+    padding-left: 12rem;
+
+}
+
+
+.about {
+    float: left;
+    width: 30%;
+    text-align: left;
+}
+
+.social {
+    padding-top: 3rem;
+}
+
+.social img {
+    padding-right: 0.7rem;
+}
+
+
+.footer-menu {
+    float: left;
+    width: 15%;
+    text-align: left;
+
+}
+
+footer ul {
+    list-style: none;
+
+}
+
+.li {
+    padding-top: 1.2rem;   
+}
+
+footer a {
+    color: hsl(233, 8%, 62%);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: hsl(136, 65%, 51%);
+}
+
+
+.copyright {
+    float: left;
+    width: 40%;
+    text-align: left;
+    padding-left: 8rem;
+
+}
+
+.copyright button {
+    margin-left: 1.6rem;
+    margin-bottom: 2rem;
+}
+.copyright p {
+    color: hsl(233, 8%, 62%);
+}
